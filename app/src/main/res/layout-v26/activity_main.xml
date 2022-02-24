@@ -11,14 +11,16 @@
 
 
     <TextView
+        android:id="@+id/tv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
         android:gravity="start|bottom"
-        android:text="14"
+        android:text=""
         android:textColor="@color/white"
         android:padding="16dp"
         android:autoSizeTextType="uniform"
+        android:maxLines="1"
         />
 
     <LinearLayout
@@ -34,11 +36,16 @@
             android:backgroundTint="@color/lightBlack"
             />
         <Button
+            android:id="@+id/button_delete"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
             android:backgroundTint="@color/lightBlack"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:text="@string/delete_button"
+            android:autoSizeTextType="uniform"
+            android:lines="1"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,28 +53,44 @@
         android:weightSum="100"
         android:layout_weight="2">
         <Button
+            android:id="@+id/button_seven"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
-            android:backgroundTint="@color/gray"/>
+            android:text="@string/seven"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@color/gray"
+            />
         <Button
+            android:id="@+id/button_eight"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
             android:backgroundTint="@color/gray"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:text="@string/eight"
+            android:autoSizeTextType="uniform"
+            />
         <Button
+            android:id="@+id/button_nine"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
             android:backgroundTint="@color/gray"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:text="@string/nine"
+            android:autoSizeTextType="uniform"
+            />
         <Button
+            android:id="@+id/button_div"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
             android:backgroundTint="@color/lightBlack"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:text="@string/divide_sign"
+            android:autoSizeTextType="uniform"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -75,28 +98,46 @@
         android:weightSum="100"
         android:layout_weight="2">
         <Button
+            android:id="@+id/button_four"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
-            android:backgroundTint="@color/gray"/>
+            android:text="@string/four"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@color/gray"
+            />
         <Button
+            android:id="@+id/button_five"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
             android:backgroundTint="@color/gray"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:text="@string/five"
+            android:autoSizeTextType="uniform"
+            />
+
         <Button
+            android:id="@+id/button_six"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
             android:layout_weight="25"
+            android:autoSizeTextType="uniform"
             android:backgroundTint="@color/gray"
-            android:layout_marginStart="8dp"/>
+            android:text="@string/six"
+            />
+
         <Button
+            android:id="@+id/button_mul"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
             android:backgroundTint="@color/lightBlack"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:text="@string/multiply_sign"
+            android:autoSizeTextType="uniform"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -104,28 +145,44 @@
         android:weightSum="100"
         android:layout_weight="2">
         <Button
+            android:id="@+id/button_one"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
-            android:backgroundTint="@color/gray"/>
+            android:text="@string/one"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@color/gray"
+            />
         <Button
+            android:id="@+id/button_two"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
             android:backgroundTint="@color/gray"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:text="@string/two"
+            android:autoSizeTextType="uniform"
+            />
         <Button
+            android:id="@+id/button_three"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
             android:backgroundTint="@color/gray"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:text="@string/three"
+            android:autoSizeTextType="uniform"
+            />
         <Button
+            android:id="@+id/button_sub"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
             android:backgroundTint="@color/lightBlack"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:text="@string/subtraction_sign"
+            android:autoSizeTextType="uniform"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -134,29 +191,45 @@
         android:layout_weight="2"
         >
         <Button
+            android:id="@+id/button_dot"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
             android:text="@string/dot"
-            android:backgroundTint="@color/gray"/>
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@color/gray"
+            />
         <Button
+            android:id="@+id/button_zero"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
             android:backgroundTint="@color/gray"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:text="@string/zero"
+            android:autoSizeTextType="uniform"
+            />
         <Button
+            android:id="@+id/button_equal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
             android:backgroundTint="@color/lightBlack"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:text="@string/equalSign"
+            android:autoSizeTextType="uniform"
+
+            />
         <Button
+            android:id="@+id/button_add"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="25"
             android:backgroundTint="@color/lightBlack"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:text="@string/add_sign"
+            android:autoSizeTextType="uniform"
+            />
     </LinearLayout>
 
 

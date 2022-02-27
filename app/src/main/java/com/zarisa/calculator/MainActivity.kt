@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         if(savedInstanceState!= null){
             val configText = savedInstanceState.getString("tv")
             binding.tv.text = configText
+            isOperationAllowed=savedInstanceState.getBoolean("operator")
+            isDotAllowed=savedInstanceState.getBoolean("dot")
         }
         onClickListeners()
     }
@@ -153,6 +155,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         outState.putString("tv" , binding.tv.text.toString())
+        outState.putBoolean("operator" , isOperationAllowed)
+        outState.putBoolean("dot" , isDotAllowed)
         super.onSaveInstanceState(outState)
     }
 }

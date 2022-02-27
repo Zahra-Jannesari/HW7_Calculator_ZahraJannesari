@@ -86,6 +86,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         Toast.makeText(this,"=", Toast.LENGTH_SHORT).show()
+        isDotAllowed = false
     }
     private fun detachmentTheDigitsAndOperators(): MutableList<Any> {
         val list = mutableListOf<Any>()
